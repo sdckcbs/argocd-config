@@ -56,7 +56,7 @@ workflow:
   namespace:
   serviceAccount:
     # -- Specifies whether a service account should be created
-    create: false
+    create: true
     # -- Labels applied to created service account
     labels: {}
     # -- Annotations applied to created service account
@@ -275,6 +275,7 @@ controller:
   # be created. Only valid when singleNamespace is false.
   workflowNamespaces:
     - default
+    - argo-user-workflows
 
   instanceID:
     # -- Configures the controller to filter workflow submissions
