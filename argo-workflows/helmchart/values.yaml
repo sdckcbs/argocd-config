@@ -274,7 +274,6 @@ controller:
   # workflows. This controls where the service account and RBAC resources will
   # be created. Only valid when singleNamespace is false.
   workflowNamespaces:
-    - default
     - argo-user-workflows
 
   instanceID:
